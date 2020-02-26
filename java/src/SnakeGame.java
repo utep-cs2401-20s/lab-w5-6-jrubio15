@@ -1,9 +1,9 @@
 public class SnakeGame {
     // Attributes
     private boolean[][] game;
-    private int headPosition;
-    private static int exhaustiveChecks;
-    private static int recursiveChecks;
+    private int[] headPosition;
+    public static int exhaustiveChecks;
+    public static int recursiveChecks;
     //Constructors
     public SnakeGame(){
         boolean [][] emptyBoard = {};
@@ -20,7 +20,7 @@ public class SnakeGame {
     // Methods
     public int neigh(int x, int y){
         int neighCount = 0;
-        if(game[x +1]{y}){
+        if(game[x + 1][y]){
             neighCount++;
             boolean num = game [x + 1][y];
         }
@@ -36,7 +36,10 @@ public class SnakeGame {
             neighCount++;
             boolean num = game[x][y - 1];
         }
+        return neighCount;
     }
+    public int[] findTailExhaustive()
+
 }
 
 
