@@ -17,26 +17,15 @@ public class SnakeGame {
         headPosition[0] = x;
         headPosition[1] = y;
     }
-    // Methods
-    public int neighbors(int x, int y){
-        int neighCount = 0;
-        if(game[x +1]{y}){
-            neighCount++;
-            boolean num = game [x + 1][y];
-        }
-        if (game[x - 1][y]){
-            neighCount++;
-            boolean num = game[x - 1][y];
-        }
-        if(game[x][y + 1]){
-            neighCount++;
-            boolean num = game[x][y + 1];
-        }
-        if(game[x][y - 1]){
-            neighCount++;
-            boolean num = game[x][y - 1];
-        }
+    //      public int[] findTailExhaustive () {}
+
+
+    {
+        public int[] findTailRecursive()
+        //      public int[] findTailRecursive ( int[] currentPosition, int[] previousPosition);
     }
+
+//    private void resetCounters();
 }
 
 
